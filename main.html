@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Main Practice</title>
+</head>
+
+<body>
+
+    <header style="background-color: hsl(0, 100%, 40%);">
+        <h1>Welcome to Lando we can be world champions i said(header)</h1>
+        <a href = "">Home</a>
+        <a href = "">About Us</a>
+        <a href = "">Products</a>
+        <a href = "">Contact Us</a>
+        <hr>
+    </header>
+
+    <p>This is normal text</p>
+    <p>This is <b>bold</b> text</p>
+    <p>This is <i>italic</i> text</p>
+    <p>This is <u>underlined</u> text</p>
+    <p>This is <del>deleted</del> text</p>
+    <p>This is <big>big</big> text</p>
+    <p>This is <small>small</small> text</p>
+    <p>This is <sub>subscript</sub> text</p>
+    <p>This is <sup>superscript</sup> text</p>
+    <p>This is <tt>monospace</tt> text</p>
+    <p>This is <mark>highlighted</mark> text</p>
+
+    <!-- GROUP TOGETHER HTML -->
+    <!-- <span> inline container to group elements for styling purposes -->
+    <!-- <div> block container to group elements for styling purposes -->
+
+    <h1><span style = "background-color: hsl(0, 100%, 50%);">This is a span tag</span></h1>
+    <h1><div style = "background-color: hsl(172, 100%, 50%);">This is a div tag</div></h1>
+
+    <p><span style = "background-color: hsl(0, 100%, 50%);">This is a span sentence</span></p>
+    <p><div style = "background-color: hsl(172, 100%, 50%);">This is a div sentence</div></p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    <span style = "background-color: hsl(0, 100%, 50%);">Repellat soluta dolorum rem molestias sunt? Earum sunt iusto nulla a dolor. 
+        Non dolor cumque repudiandae laboriosam, aliquam iusto est nisi maiores.</span></p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    <div style = "background-color: hsl(172, 100%, 50%);">Repellat soluta dolorum rem molestias sunt? Earum sunt iusto nulla a dolor. 
+        Non dolor cumque repudiandae laboriosam, aliquam iusto est nisi maiores.</div></p>
+
+    <!-- LISTS -->
+    <!-- unordered lists -->
+
+    <h4>Groceries</h4>
+    <ul>
+        <li>Milk</li>
+        <li>Eggs</li>
+        <li>Bread</li>
+        <li>Coffee Supplies</li>
+        <ul>
+            <li>Coffee Beans</li>
+            <li>Creamer</li>
+            <li>Sugar</li>
+        </ul>
+    </ul>
+
+    <!-- ordered list -->
+
+    <h4>To-Do List</h4>
+    <ol>
+        <li>Eat Breakfast</li>
+        <li>Go to Class</li>
+        <li>Walk Dog</li>
+        <li>Work</li>
+    </ol>
+
+    <!-- description lists -->
+    
+    <h4>F1 googers</h4>
+    <div style = "background-color:hsl(0, 100%, 50%); border: solid; display:inline-block;">
+    <dl>
+        <dt>Max Verstappen</dt>
+        <dd>THE GOAT</dd>
+        <dt>Charles Leclerc</dt>
+        <dd>The depressed guy</dd>
+        <dt>Lewis Hamilton</dt>
+        <dd>good guy</dd>
+        <dt>George RUSSEL</dt>
+        <dd>not clean</dd>
+    </dl></div>
+
+    <!-- TABLES -->
+
+    <h3>Store Hours</h3>
+    <table border="1" style = "background-color: hsl(0, 0%, 0%)">
+        <tr align="center" style = "background-color: hsl(172, 100%, 50%);">
+            <th width="100">Sunday</th>
+            <th width="100">Monday</th>
+            <th width="100">Tuesday</th>
+            <th width="100">Wednesday</th>
+            <th width="100">Thursday</th>
+            <th width="100">Friday</th>
+            <th width="100">Saturday</th>
+        </tr>
+        <tr align="center" style = "background-color: hsl(204, 100%, 50%);">
+            <th>Closed</th>
+            <th>9-5</th>
+            <th>9-5</th>
+            <th>9-5</th>
+            <th>9-5</th>
+            <th>9-5</th>
+            <th>10-2</th>
+        </tr>
+    </table>
+
+    <br>
+    <!-- BUTTONS -->
+     
+    <!-- <a href = "https://google.com"> -->
+    <button onclick = "doSomething()" style="font-size: 25px; background-color: hsl(251, 100%, 50%); color: hsl(0, 100%, 50%); border-radius: 25px;">Click Me</button>
+    <!-- </a> -->
+
+    <p id="greeting">Hello</p>
+
+    <script>
+        function doSomething(){
+            document.getElementById("greeting").innerHTML = "goodbye";        
+        }
+    </script>
+
+    <!-- FORMS -->
+
+    <form action = "index.php" method="post" enctype = "multipart/form-data">
+
+        <label for="username">Username:</label>
+        <input type = "text" id = "username" placeholder = "SpongeBob" minlength = "6" maxlength = "16" required>
+        
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id = "password" placeholder= "Enter Password" minlength = "6" maxlength = "16" required>
+
+        <br>
+        <label for = "email">E-mail:</label>
+        <input type = "email" id = "email" placeholder="SSquarepants@gmail.com" required>        
+
+        <br>
+        <label for = "phone">Phone #:</label>
+        <input type = "tel" id = "phone" placeholder = "123-465-7890" pattern = "[0-9]{3}-[0-9]{3}-[0-9]{4}">
+
+        <br>
+        <label for = "birthday">Birthdate:</label>
+        <input type = "date" id = "birthday">
+
+        <br>
+        <label for = "quantity">Quantity:</label>
+        <input type = "number" id = "quantity" min = "0" max = "99" value = "1">
+
+        <br>
+        <label for = "title">Title</label>
+        
+        <label for = "Mr.">Mr.</label>
+        <input type = "radio" id = "Mr." value = "Mr." name = "title">
+        <label for = "Ms.">Ms.</label>
+        <input type = "radio" id = "Ms." value = "Ms." name = "title">
+        <label for = "PhD.">PhD</label>
+        <input type = "radio" id = "PhD." value = "PhD" name = "title">
+
+        <br>
+        <select>
+            <option value = "visa">Visa</option>
+            <option value = "Master Card">Master Card</option>
+            <option value = "Gift Card">Gift Card</option>
+        </select>
+
+        <br>
+        <label for = "subscribe">Subscribe:</label>
+        <input type = "checkbox" id = "subscribe">
+
+        <br>
+        <label for = "comment">Comment:</label>
+        <textarea id = "comment"  rows = "3" cols = "25"></textarea>
+
+        <br>
+        <label for = "file">File:</label>
+        <input type = "file" id = "file" accept= "image/png, image/jpeg, image/gif">
+
+        <br>
+        <input type="reset">
+        <input type="submit">
+
+    </form>
+
+
+    <footer style="background-color: hsl(0, 100%, 40%)">
+        <hr>
+        author:Lando Norris<br>
+        &copy; copyright reserved<br>
+        <a href = "mailto:NotFake@gmail.com">NotFake@gmail.com</a>
+    </footer>
+
+</body>
+</html>
