@@ -33,6 +33,7 @@ h1{
     height: 100px;
     background-color: aqua;
     box-shadow: 3px 3px 5px;
+    margin-top: 100px;
 }
 
 #p1{
@@ -123,7 +124,7 @@ h1{
     background-color: aliceblue;
     border: 2px solid;
     padding: 20px;
-    height: auto; 
+    height: 50%; 
     width: 50%;  /* can also use percentage assign or direct pixel assignment */
     float: left; /*  needs enough space to work */
     text-align: center;
@@ -131,3 +132,4 @@ h1{
 
     min-height: 100%;
 }
+
